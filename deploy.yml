@@ -1,0 +1,20 @@
+name: Deploy Static Website
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: echo "No dependencies for static site"
+
+      - name: Build site
+        run: echo "Static site ready"
